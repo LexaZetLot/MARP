@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "marp",
+	"version": "${version}",
+	"name": "MARP",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/marp/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.comand_marp.marp.MARP"
+		],
+		"client": [
+			"net.comand_marp.marp.MARPClient"
+		],
+		"fabric-datagen": [
+			"net.comand_marp.marp.MARPDataGenerator"
+		]
+	},
+	"mixins": [
+		"marp.mixins.json",
+		{
+			"config": "marp.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
