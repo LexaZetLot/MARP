@@ -1,5 +1,6 @@
 package net.comand_marp.marp;
 
+import net.comand_marp.marp.block.ModBlocks;
 import net.comand_marp.marp.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -20,5 +21,6 @@ public class MARP implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 		ModItems.registerModItems();
+		ModBlocks.registerModBlock();
 	}
 }

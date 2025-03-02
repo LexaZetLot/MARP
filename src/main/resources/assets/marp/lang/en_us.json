@@ -1,4 +1,7 @@
 {
   "item.marp.grass": "Grass",
-  "item.marp.hay": "Hay"
+  "item.marp.hay": "Hay",
+
+  "block.marp.block_grass": "Block Grass",
+  "block.marp.block_hay": "Block Hay"
 }
