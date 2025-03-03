@@ -3,5 +3,8 @@
   "item.marp.hay": "Hay",
 
   "block.marp.block_grass": "Block Grass",
-  "block.marp.block_hay": "Block Hay"
+  "block.marp.block_hay": "Block Hay",
+
+  "itemgroup.marp.grass": "Items",
+  "itemgroup.marp.block_grass": "Blocks"
 }
