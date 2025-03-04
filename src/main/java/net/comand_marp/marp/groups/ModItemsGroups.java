@@ -17,6 +17,7 @@ public class ModItemsGroups {
             FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.GRASS))
                     .displayName(Text.translatable("itemgroup.marp.grass"))
                     .entries((displayContext, entries) -> {
+                        entries.add(ModItems.COPPER_ORE);
                         entries.add(ModItems.GRASS);
                         entries.add(ModItems.HAY);
                     }).build());
@@ -32,5 +33,6 @@ public class ModItemsGroups {
 
     public static void registerItemGroups() {
         MARP.LOGGER.info("Registering Item Groups for " + MARP.MOD_ID);
+
     }
 }
