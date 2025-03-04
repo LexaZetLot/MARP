@@ -15,7 +15,7 @@ public class ModItemsGroups {
     public static final ItemGroup GRASS_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(MARP.MOD_ID, "grass"),
             FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.GRASS))
-                    .displayName(Text.translatable("itemgroup.marp.grass"))
+                    .displayName(Text.translatable("itemgroup.marp.item"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.COPPER_ORE);
                         entries.add(ModItems.GRASS);
@@ -23,16 +23,15 @@ public class ModItemsGroups {
                     }).build());
 
     public static final ItemGroup GRASS_ITEMS_BLOCK_GROUP = Registry.register(Registries.ITEM_GROUP,
-            Identifier.of(MARP.MOD_ID, "block_grass"),
-            FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.BLOCK_GRASS))
-                    .displayName(Text.translatable("itemgroup.marp.block_grass"))
+            Identifier.of(MARP.MOD_ID, "grass_block"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.GRASS_BLOCK))
+                    .displayName(Text.translatable("itemgroup.marp.block"))
                     .entries((displayContext, entries) -> {
-                        entries.add(ModBlocks.BLOCK_GRASS);
-                        entries.add(ModBlocks.BLOCK_HAY);
+                        entries.add(ModBlocks.GRASS_BLOCK);
+                        entries.add(ModBlocks.HAY_BLOCK);
                     }).build());
 
     public static void registerItemGroups() {
         MARP.LOGGER.info("Registering Item Groups for " + MARP.MOD_ID);
-
     }
 }

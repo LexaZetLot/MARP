@@ -3,9 +3,9 @@
   "item.marp.hay": "Hay",
   "item.marp.copper_ore": "Copper Ore",
 
-  "block.marp.block_grass": "Block Grass",
-  "block.marp.block_hay": "Block Hay",
+  "block.marp.grass_block": "Grass Block",
+  "block.marp.hay_block": "Hay Block",
 
-  "itemgroup.marp.grass": "Items",
-  "itemgroup.marp.block_grass": "Blocks"
+  "itemgroup.marp.item": "Items",
+  "itemgroup.marp.block": "Blocks"
 }

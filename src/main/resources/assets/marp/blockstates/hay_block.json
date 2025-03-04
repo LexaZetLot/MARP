@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "marp:block/block_hay"
+      "model": "marp:block/hay_block"
     }
   }
 }
