@@ -17,7 +17,9 @@ public class ModItemsGroups {
             FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.GRASS))
                     .displayName(Text.translatable("itemgroup.marp.item"))
                     .entries((displayContext, entries) -> {
+                        entries.add(ModItems.PIECE_STONE);
                         entries.add(ModItems.COPPER_ORE);
+                        entries.add(ModItems.COPPER_INGOT);
                         entries.add(ModItems.GRASS);
                         entries.add(ModItems.HAY);
                     }).build());
@@ -27,6 +29,7 @@ public class ModItemsGroups {
             FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.GRASS_BLOCK))
                     .displayName(Text.translatable("itemgroup.marp.block"))
                     .entries((displayContext, entries) -> {
+                        entries.add(ModBlocks.COPPER_ORE_BLOCK);
                         entries.add(ModBlocks.GRASS_BLOCK);
                         entries.add(ModBlocks.HAY_BLOCK);
                     }).build());

@@ -14,7 +14,9 @@ public class ModItems {
     public static final Item GRASS = registerItem("grass", Item::new, new Item.Settings());
     public static final Item HAY = registerItem("hay", Item::new, new Item.Settings());
 
+    public static final Item PIECE_STONE = registerItem("piece_stone", Item::new, new Item.Settings());
     public static final Item COPPER_ORE = registerItem("copper_ore", Item::new, new Item.Settings());
+    public static final Item COPPER_INGOT = registerItem("copper_ingot", Item::new, new Item.Settings());
 
     private static Item registerItem(String name, Function<Item.Settings, Item> factory, Item.Settings settings) {
         final RegistryKey<Item> registryKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MARP.MOD_ID, name));
