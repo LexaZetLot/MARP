@@ -13,7 +13,7 @@ import net.minecraft.util.Identifier;
 
 public class ModItemsGroups {
     public static final ItemGroup GRASS_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,
-            Identifier.of(MARP.MOD_ID, "grass"),
+            Identifier.of(MARP.MOD_ID, "grass.json"),
             FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.GRASS))
                     .displayName(Text.translatable("itemgroup.marp.item"))
                     .entries((displayContext, entries) -> {
