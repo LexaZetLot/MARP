@@ -17,9 +17,12 @@ public class ModItemsGroups {
             FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.GRASS))
                     .displayName(Text.translatable("itemgroup.marp.item"))
                     .entries((displayContext, entries) -> {
+                        entries.add(ModItems.CHISEL);
+
                         entries.add(ModItems.PIECE_STONE);
                         entries.add(ModItems.COPPER_ORE);
                         entries.add(ModItems.COPPER_INGOT);
+
                         entries.add(ModItems.GRASS);
                         entries.add(ModItems.HAY);
                     }).build());

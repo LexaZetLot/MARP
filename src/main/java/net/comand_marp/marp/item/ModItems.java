@@ -1,6 +1,7 @@
 package net.comand_marp.marp.item;
 
 import net.comand_marp.marp.MARP;
+import net.comand_marp.marp.item.custom.ChiselItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryKey;
@@ -17,6 +18,8 @@ public class ModItems {
     public static final Item PIECE_STONE = registerItem("piece_stone", Item::new, new Item.Settings());
     public static final Item COPPER_ORE = registerItem("copper_ore", Item::new, new Item.Settings());
     public static final Item COPPER_INGOT = registerItem("copper_ingot", Item::new, new Item.Settings());
+
+    public static final Item CHISEL = registerItem("chisel", ChiselItem::new, new ChiselItem.Settings().maxDamage(32));
 
     private static Item registerItem(String name, Function<Item.Settings, Item> factory, Item.Settings settings) {
         final RegistryKey<Item> registryKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MARP.MOD_ID, name));
