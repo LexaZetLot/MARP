@@ -1,6 +1,7 @@
 package net.comand_marp.marp.block;
 
 import net.comand_marp.marp.MARP;
+import net.comand_marp.marp.block.custom.Road;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -18,6 +19,7 @@ public class ModBlocks {
 
     public static final Block COPPER_ORE_BLOCK = registerBlock("copper_ore_block", Block::new, Block.Settings.create().strength(3.0F).requiresTool().sounds(BlockSoundGroup.STONE));
 
+    public static final Block ROAD = registerBlock("road", Road::new, Block.Settings.create().strength(1.0F).sounds(BlockSoundGroup.GRASS));
 
     private static Block registerBlock(String name, Function<AbstractBlock.Settings, Block> factory, Block.Settings settings) {
         final Identifier identifier = Identifier.of("marp", name);

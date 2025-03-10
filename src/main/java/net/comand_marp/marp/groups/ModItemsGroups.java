@@ -32,6 +32,8 @@ public class ModItemsGroups {
             FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.GRASS_BLOCK))
                     .displayName(Text.translatable("itemgroup.marp.block"))
                     .entries((displayContext, entries) -> {
+                        entries.add(ModBlocks.ROAD);
+
                         entries.add(ModBlocks.COPPER_ORE_BLOCK);
                         entries.add(ModBlocks.GRASS_BLOCK);
                         entries.add(ModBlocks.HAY_BLOCK);

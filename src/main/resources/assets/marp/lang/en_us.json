@@ -9,6 +9,7 @@
   "block.marp.grass_block": "Grass Block",
   "block.marp.hay_block": "Hay Block",
   "block.marp.copper_ore_block": "Copper Ore Block",
+  "block.marp.road": "Road",
 
   "itemgroup.marp.item": "Items",
   "itemgroup.marp.block": "Blocks"
