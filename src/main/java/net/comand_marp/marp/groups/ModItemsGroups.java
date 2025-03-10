@@ -11,6 +11,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
+
 public class ModItemsGroups {
     public static final ItemGroup GRASS_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(MARP.MOD_ID, "grass.json"),
@@ -25,6 +26,9 @@ public class ModItemsGroups {
 
                         entries.add(ModItems.GRASS);
                         entries.add(ModItems.HAY);
+                        entries.add(ModItems.OAK_LOG);
+
+                        entries.add(ModItems.BEAR);
                     }).build());
 
     public static final ItemGroup GRASS_ITEMS_BLOCK_GROUP = Registry.register(Registries.ITEM_GROUP,
