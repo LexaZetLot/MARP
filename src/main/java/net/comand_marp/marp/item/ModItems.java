@@ -4,11 +4,15 @@ import net.comand_marp.marp.MARP;
 import net.comand_marp.marp.food.ModFoodComponents;
 import net.comand_marp.marp.item.custom.ChiselItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
+import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
+import java.util.List;
 import java.util.function.Function;
 
 
@@ -22,7 +26,16 @@ public class ModItems {
 
     public static final Item CHISEL = registerItem("chisel", ChiselItem::new, new ChiselItem.Settings().maxDamage(32));
 
-    public static final Item BEAR = registerItem("bear", Item::new, new Item.Settings().food(ModFoodComponents.BEAR));
+    public static final Item BEAR = registerItem("bear",
+            settings -> new Item(settings.food(ModFoodComponents.BEAR)) {
+                @Override
+                public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+                    tooltip.add(Text.translatable("tooltip.marp.bear.tooltip"));
+                    super.appendTooltip(stack, context, tooltip, type);
+                }
+            },
+            new Item.Settings().food(ModFoodComponents.BEAR)
+    );
 
     public static final Item OAK_LOG = registerItem("oak_log", Item::new, new Item.Settings());
 
