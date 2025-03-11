@@ -1,0 +1,23 @@
+{
+  "item.marp.grass": "Grass",
+  "item.marp.hay": "Hay",
+  "item.marp.piece_stone": "Piece Stone",
+  "item.marp.copper_ore": "Copper Ore",
+  "item.marp.copper_ingot": "Copper Ingot",
+  "item.marp.chisel": "Chisel",
+  "item.marp.bear": "Bear",
+  "item.marp.oak_log": "Oak Log",
+
+  "block.marp.grass_block": "Grass Block",
+  "block.marp.hay_block": "Hay Block",
+  "block.marp.copper_ore_block": "Copper Ore Block",
+  "block.marp.road": "Road",
+
+  "itemgroup.marp.item": "Items",
+  "itemgroup.marp.block": "Blocks",
+
+  "tooltip.marp.road.tooltip": "The road speeds up movement",
+  "tooltip.marp.chisel": "Press §9shift§r to see hint",
+  "tooltip.marp.chisel.shift_down": "Turns stone into brick",
+  "tooltip.marp.bear.tooltip": "This is bear"
+}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "marp:block/copper_ore_block"
+    }
+  }
+}
