@@ -41,6 +41,17 @@ public class ModItemsGroups {
                         entries.add(ModBlocks.COPPER_ORE_BLOCK);
                         entries.add(ModBlocks.GRASS_BLOCK);
                         entries.add(ModBlocks.HAY_BLOCK);
+
+                        entries.add(ModBlocks.STONE_BLOCK);
+                        entries.add(ModBlocks.STONE_STAIRS);
+                        entries.add(ModBlocks.STONE_SLAB);
+                        entries.add(ModBlocks.STONE_BUTTON);
+                        entries.add(ModBlocks.STONE_PRESSURE_PLATE);
+                        entries.add(ModBlocks.STONE_FENCE);
+                        entries.add(ModBlocks.STONE_FENCE_GATE);
+                        entries.add(ModBlocks.STONE_WALL);
+                        entries.add(ModBlocks.STONE_DOOR);
+                        entries.add(ModBlocks.STONE_TRAPDOOR);
                     }).build());
 
     public static void registerItemGroups() {

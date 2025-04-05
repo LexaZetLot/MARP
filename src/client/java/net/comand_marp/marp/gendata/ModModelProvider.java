@@ -15,10 +15,25 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
+        BlockStateModelGenerator.BlockTexturePool stonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.STONE_BLOCK);
+
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ROAD);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.COPPER_ORE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.HAY_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GRASS_BLOCK);
+
+        stonePool.stairs(ModBlocks.STONE_STAIRS);
+        stonePool.slab(ModBlocks.STONE_SLAB);
+
+        stonePool.button(ModBlocks.STONE_BUTTON);
+        stonePool.pressurePlate(ModBlocks.STONE_PRESSURE_PLATE);
+
+        stonePool.fence(ModBlocks.STONE_FENCE);
+        stonePool.fenceGate(ModBlocks.STONE_FENCE_GATE);
+        stonePool.wall(ModBlocks.STONE_WALL);
+
+        blockStateModelGenerator.registerDoor(ModBlocks.STONE_DOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.STONE_TRAPDOOR);
     }
 
     @Override

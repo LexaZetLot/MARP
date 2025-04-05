@@ -15,10 +15,14 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
-        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
-                .add(ModBlocks.COPPER_ORE_BLOCK);
+        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(ModBlocks.COPPER_ORE_BLOCK);
+        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(ModBlocks.STONE_BLOCK);
 
-        getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
-            .add(ModBlocks.COPPER_ORE_BLOCK);
+        getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL).add(ModBlocks.COPPER_ORE_BLOCK);
+        getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL).add(ModBlocks.STONE_BLOCK);
+
+        getOrCreateTagBuilder(BlockTags.FENCES).add(ModBlocks.STONE_FENCE);
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES).add(ModBlocks.STONE_FENCE_GATE);
+        getOrCreateTagBuilder(BlockTags.WALLS).add(ModBlocks.STONE_WALL);
     }
 }

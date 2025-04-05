@@ -8,6 +8,21 @@
   "item.marp.bear": "Bear",
   "item.marp.oak_log": "Oak Log",
 
+  "block.marp.stone_block": "Stone Stairs",
+
+  "block.marp.stone_stairs": "Stone Stairs",
+  "block.marp.stone_slab": "Stone Slab",
+
+  "block.marp.stone_button": "Stone Button",
+  "block.marp.stone_pressure_plate": "Stone Pressure Plate",
+
+  "block.marp.stone_fence": "Stone Fence",
+  "block.marp.stone_fence_gate": "Stone Fence Gate",
+  "block.marp.stone_wall": "Stone Wall",
+
+  "block.marp.stone_door": "Stone Door",
+  "block.marp.stone_trapdoor": "Stone Trapdoor",
+
   "block.marp.grass_block": "Grass Block",
   "block.marp.hay_block": "Hay Block",
   "block.marp.copper_ore_block": "Copper Ore Block",
