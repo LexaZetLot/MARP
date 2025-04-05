@@ -28,7 +28,7 @@ public class ModItemsGroups {
                         entries.add(ModItems.HAY);
                         entries.add(ModItems.OAK_LOG);
 
-                        entries.add(ModItems.BEAR);
+                        entries.add(ModItems.BEER);
                     }).build());
 
     public static final ItemGroup GRASS_ITEMS_BLOCK_GROUP = Registry.register(Registries.ITEM_GROUP,

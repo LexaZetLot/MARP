@@ -26,15 +26,15 @@ public class ModItems {
 
     public static final Item CHISEL = registerItem("chisel", ChiselItem::new, new ChiselItem.Settings().maxDamage(32));
 
-    public static final Item BEAR = registerItem("bear",
-            settings -> new Item(settings.food(ModFoodComponents.BEAR)) {
+    public static final Item BEER = registerItem("beer",
+            settings -> new Item(settings.food(ModFoodComponents.BEER)) {
                 @Override
                 public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
-                    tooltip.add(Text.translatable("tooltip.marp.bear.tooltip"));
+                    tooltip.add(Text.translatable("tooltip.marp.beer.tooltip"));
                     super.appendTooltip(stack, context, tooltip, type);
                 }
             },
-            new Item.Settings().food(ModFoodComponents.BEAR)
+            new Item.Settings().food(ModFoodComponents.BEER)
     );
 
     public static final Item OAK_LOG = registerItem("oak_log", Item::new, new Item.Settings());

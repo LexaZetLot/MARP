@@ -41,7 +41,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.HAY, Models.GENERATED);
         itemModelGenerator.register(ModItems.GRASS, Models.GENERATED);
         itemModelGenerator.register(ModItems.COPPER_ORE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.BEAR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BEER, Models.GENERATED);
         itemModelGenerator.register(ModItems.CHISEL, Models.GENERATED);
         itemModelGenerator.register(ModItems.PIECE_STONE, Models.GENERATED);
         itemModelGenerator.register(ModItems.COPPER_INGOT, Models.GENERATED);
