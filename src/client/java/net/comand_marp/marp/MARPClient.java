@@ -1,11 +1,13 @@
 package net.comand_marp.marp;
 
+import net.comand_marp.marp.component.ModDataComponentTypes;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.item.v1.ItemTooltipCallback;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.text.Text;
+import net.minecraft.util.math.BlockPos;
 
 import java.util.List;
 
@@ -26,6 +28,13 @@ public class MARPClient implements ClientModInitializer {
 	private static void appendTooltip(ItemStack stack, List<Text> tooltip, TooltipType type) {
 		if (Screen.hasShiftDown()) {
 			tooltip.add(Text.translatable("tooltip.marp.chisel.shift_down"));
+
+			BlockPos pos = stack.get(ModDataComponentTypes.COORDINATES);
+			if (pos != null) {
+				tooltip.add(Text.literal("Saved Position: " + pos.toShortString()));
+			} else {
+				tooltip.add(Text.literal("No saved position"));
+			}
 		} else {
 			tooltip.add(Text.translatable("tooltip.marp.chisel"));
 		}

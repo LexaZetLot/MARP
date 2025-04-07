@@ -1,5 +1,6 @@
 package net.comand_marp.marp.item.custom;
 
+import net.comand_marp.marp.component.ModDataComponentTypes;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.EquipmentSlot;
@@ -36,6 +37,7 @@ public class ChiselItem extends Item {
                 item -> Objects.requireNonNull(context.getPlayer()).sendEquipmentBreakStatus(item, EquipmentSlot.MAINHAND));
 
                 world.playSound(null, context.getBlockPos(), SoundEvents.BLOCK_GRINDSTONE_USE, SoundCategory.BLOCKS);
+                context.getStack().set(ModDataComponentTypes.COORDINATES, context.getBlockPos());
             }
 
         return ActionResult.SUCCESS;
