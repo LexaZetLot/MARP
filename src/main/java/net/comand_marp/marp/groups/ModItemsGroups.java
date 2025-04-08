@@ -29,6 +29,12 @@ public class ModItemsGroups {
                         entries.add(ModItems.OAK_LOG);
 
                         entries.add(ModItems.BEER);
+
+                        entries.add(ModItems.COPPER_SWORD);
+                        entries.add(ModItems.COPPER_PICKAXE);
+                        entries.add(ModItems.COPPER_SHOVEL);
+                        entries.add(ModItems.COPPER_AXE);
+                        entries.add(ModItems.COPPER_HOE);
                     }).build());
 
     public static final ItemGroup GRASS_ITEMS_BLOCK_GROUP = Registry.register(Registries.ITEM_GROUP,

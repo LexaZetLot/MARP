@@ -3,9 +3,7 @@ package net.comand_marp.marp.item;
 import net.comand_marp.marp.MARP;
 import net.comand_marp.marp.food.ModFoodComponents;
 import net.comand_marp.marp.item.custom.ChiselItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
+import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
@@ -36,6 +34,12 @@ public class ModItems {
             },
             new Item.Settings().food(ModFoodComponents.BEER)
     );
+
+    public static final Item COPPER_SWORD = registerItem("copper_sword", (settings) -> new SwordItem(ModToolMaterials.COPPER, 3, -2.4f, settings), new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MARP.MOD_ID, "copper_sword"))));
+    public static final Item COPPER_PICKAXE = registerItem("copper_pickaxe", (settings) -> new PickaxeItem(ModToolMaterials.COPPER, 1, -2.8f, settings), new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MARP.MOD_ID, "copper_pickaxe"))));
+    public static final Item COPPER_SHOVEL = registerItem("copper_shovel", (settings) -> new ShovelItem(ModToolMaterials.COPPER, 1.5f, -3.0f, settings), new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MARP.MOD_ID, "copper_shovel"))));
+    public static final Item COPPER_AXE = registerItem("copper_axe", (settings) -> new AxeItem(ModToolMaterials.COPPER, 6, -3.2f, settings), new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MARP.MOD_ID, "copper_axe"))));
+    public static final Item COPPER_HOE = registerItem("copper_hoe", (settings) -> new HoeItem(ModToolMaterials.COPPER, 0, -3f, settings), new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MARP.MOD_ID, "copper_hoe"))));
 
     public static final Item OAK_LOG = registerItem("oak_log", Item::new, new Item.Settings());
 

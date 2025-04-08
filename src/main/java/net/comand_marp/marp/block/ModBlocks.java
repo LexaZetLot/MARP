@@ -2,9 +2,7 @@ package net.comand_marp.marp.block;
 
 import net.comand_marp.marp.MARP;
 import net.comand_marp.marp.block.custom.Road;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
-import net.minecraft.item.ItemGroups;
 import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
@@ -69,9 +67,6 @@ public class ModBlocks {
     }
 
     public static void registerModBlock() {
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries ->
-            entries.add(ModBlocks.STONE_BLOCK)
-        );
         MARP.LOGGER.info("Registering Mod Items for " + MARP.MOD_ID);
     }
 }
