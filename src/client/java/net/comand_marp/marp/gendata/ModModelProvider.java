@@ -46,5 +46,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.PIECE_STONE, Models.GENERATED);
         itemModelGenerator.register(ModItems.COPPER_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.OAK_LOG, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.COPPER_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.COPPER_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.COPPER_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.COPPER_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.COPPER_HOE, Models.HANDHELD);
     }
 }
