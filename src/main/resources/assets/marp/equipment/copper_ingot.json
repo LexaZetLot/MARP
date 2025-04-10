@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "marp:copper"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "marp:copper"
+      }
+    ]
+  }
+}
