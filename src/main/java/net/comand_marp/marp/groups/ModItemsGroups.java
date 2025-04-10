@@ -35,6 +35,8 @@ public class ModItemsGroups {
                         entries.add(ModItems.COPPER_SHOVEL);
                         entries.add(ModItems.COPPER_AXE);
                         entries.add(ModItems.COPPER_HOE);
+
+                        entries.add(ModItems.COPPER_HAMMER);
                     }).build());
 
     public static final ItemGroup GRASS_ITEMS_BLOCK_GROUP = Registry.register(Registries.ITEM_GROUP,

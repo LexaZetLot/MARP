@@ -5,8 +5,10 @@ import net.comand_marp.marp.component.ModDataComponentTypes;
 import net.comand_marp.marp.fuel.ModFuelItems;
 import net.comand_marp.marp.groups.ModItemsGroups;
 import net.comand_marp.marp.item.ModItems;
+import net.comand_marp.marp.utils.HammerUsageEvent;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -28,5 +30,6 @@ public class MARP implements ModInitializer {
 		ModItemsGroups.registerItemGroups();
 		ModFuelItems.registerFuels();
 		ModDataComponentTypes.registerDataComponentTypes();
+		PlayerBlockBreakEvents.BEFORE.register(new HammerUsageEvent());
 	}
 }
