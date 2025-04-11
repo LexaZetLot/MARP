@@ -10,6 +10,7 @@ import net.minecraft.item.equipment.EquipmentType;
 import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
@@ -52,6 +53,8 @@ public class ModItems {
     public static final Item COPPER_BOOTS = registerItem("copper_boots", (settings) -> new ArmorItem(ModArmorMaterials.COPPER_ARMOR_MATERIAL, EquipmentType.BOOTS, settings), new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MARP.MOD_ID, "copper_boots"))));
 
     public static final Item OAK_LOG = registerItem("oak_log", Item::new, new Item.Settings());
+
+    public static final Item COPPER_HORSE_ARMOR = registerItem("copper_horse_armor", (settings) -> new AnimalArmorItem(ModArmorMaterials.COPPER_ARMOR_MATERIAL, AnimalArmorItem.Type.EQUESTRIAN, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, false, settings), new Item.Settings().maxCount(1).registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MARP.MOD_ID, "copper_horse_armor"))));
 
     private static Item registerItem(String name, Function<Item.Settings, Item> factory, Item.Settings settings) {
         final RegistryKey<Item> registryKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MARP.MOD_ID, name));

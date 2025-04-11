@@ -1,5 +1,10 @@
 {
   "layers": {
+    "horse_body": [
+      {
+        "texture": "marp:copper"
+      }
+    ],
     "humanoid": [
       {
         "texture": "marp:copper"
