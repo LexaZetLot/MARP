@@ -4,6 +4,7 @@ import net.comand_marp.marp.MARP;
 import net.comand_marp.marp.food.ModFoodComponents;
 import net.comand_marp.marp.item.custom.ChiselItem;
 import net.comand_marp.marp.item.custom.HammerItem;
+import net.comand_marp.marp.item.custom.ModArmorItem;
 import net.minecraft.item.*;
 import net.minecraft.item.equipment.EquipmentType;
 import net.minecraft.item.tooltip.TooltipType;
@@ -45,7 +46,7 @@ public class ModItems {
 
     public static final Item COPPER_HAMMER = registerItem("copper_hammer", (settings) -> new HammerItem(ModToolMaterials.COPPER, 7, -3.4f, settings), new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MARP.MOD_ID, "copper_hammer"))));
 
-    public static final Item COPPER_HELMET = registerItem("copper_helmet", (settings) -> new ArmorItem(ModArmorMaterials.COPPER_ARMOR_MATERIAL, EquipmentType.HELMET, settings), new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MARP.MOD_ID, "copper_helmet"))));
+    public static final Item COPPER_HELMET = registerItem("copper_helmet", (settings) -> new ModArmorItem(ModArmorMaterials.COPPER_ARMOR_MATERIAL, EquipmentType.HELMET, settings), new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MARP.MOD_ID, "copper_helmet"))));
     public static final Item COPPER_CHESTPLATE = registerItem("copper_chestplate", (settings) -> new ArmorItem(ModArmorMaterials.COPPER_ARMOR_MATERIAL, EquipmentType.CHESTPLATE, settings), new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MARP.MOD_ID, "copper_chestplate"))));
     public static final Item COPPER_LEGGINGS = registerItem("copper_leggings", (settings) -> new ArmorItem(ModArmorMaterials.COPPER_ARMOR_MATERIAL, EquipmentType.LEGGINGS, settings), new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MARP.MOD_ID, "copper_leggings"))));
     public static final Item COPPER_BOOTS = registerItem("copper_boots", (settings) -> new ArmorItem(ModArmorMaterials.COPPER_ARMOR_MATERIAL, EquipmentType.BOOTS, settings), new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MARP.MOD_ID, "copper_boots"))));
