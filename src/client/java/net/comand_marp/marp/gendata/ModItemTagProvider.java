@@ -1,6 +1,7 @@
 package net.comand_marp.marp.gendata;
 
 import net.comand_marp.marp.item.ModItems;
+import net.comand_marp.marp.utils.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
@@ -31,5 +32,14 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider{
                 .add(ModItems.COPPER_CHESTPLATE)
                 .add(ModItems.COPPER_LEGGINGS)
                 .add(ModItems.COPPER_BOOTS);
+
+        getOrCreateTagBuilder(ItemTags.TRIM_MATERIALS)
+                .add(ModItems.COPPER_INGOT);
+
+        getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.KAUPEN_SMITHING_TEMPLATE);
+
+        getOrCreateTagBuilder(ModTags.Items.COPPER_REPAIR)
+                .add(ModItems.COPPER_INGOT);
     }
 }

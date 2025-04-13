@@ -44,6 +44,8 @@ public class ModItemsGroups {
                         entries.add(ModItems.COPPER_BOOTS);
 
                         entries.add(ModItems.COPPER_HORSE_ARMOR);
+
+                        entries.add(ModItems.KAUPEN_SMITHING_TEMPLATE);
                     }).build());
 
     public static final ItemGroup GRASS_ITEMS_BLOCK_GROUP = Registry.register(Registries.ITEM_GROUP,

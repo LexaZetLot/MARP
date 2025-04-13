@@ -63,5 +63,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(ModItems.COPPER_BOOTS, RegistryKey.of(RegistryKey.ofRegistry(Identifier.ofVanilla("equipment_asset")), Identifier.of(MARP.MOD_ID, "copper_ingot")), "boots", false);
 
         itemModelGenerator.register(ModItems.COPPER_HORSE_ARMOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.KAUPEN_SMITHING_TEMPLATE, Models.GENERATED);
     }
 }

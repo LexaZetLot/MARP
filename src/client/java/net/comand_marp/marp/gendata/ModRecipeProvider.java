@@ -1,5 +1,6 @@
 package net.comand_marp.marp.gendata;
 
+import net.comand_marp.marp.MARP;
 import net.comand_marp.marp.block.ModBlocks;
 import net.comand_marp.marp.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -9,7 +10,10 @@ import net.minecraft.data.recipe.RecipeGenerator;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.util.Identifier;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -53,6 +57,8 @@ public class ModRecipeProvider extends FabricRecipeProvider  {
                         .criterion(hasItem(ModItems.CHISEL), conditionsFromItem(ModItems.CHISEL))
                         .offerTo(exporter);
 
+                offerSmithingTrimRecipe(ModItems.KAUPEN_SMITHING_TEMPLATE, RegistryKey.of(RegistryKeys.RECIPE,
+                        Identifier.ofVanilla(getItemPath(ModItems.KAUPEN_SMITHING_TEMPLATE) + "_smithing_trim")));
             }
         };
     }
