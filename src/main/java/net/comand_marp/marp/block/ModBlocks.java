@@ -1,6 +1,7 @@
 package net.comand_marp.marp.block;
 
 import net.comand_marp.marp.MARP;
+import net.comand_marp.marp.block.custom.DirtBlock;
 import net.comand_marp.marp.block.custom.Road;
 import net.minecraft.block.*;
 import net.minecraft.item.Items;
@@ -19,6 +20,7 @@ public class ModBlocks {
     public static final Block STONE_BLOCK;
 
     public static final Block ROAD;
+    public static final Block DIRT_BLOCK;
 
     public static final Block STONE_STAIRS ;
     public static final Block STONE_SLAB;
@@ -41,6 +43,8 @@ public class ModBlocks {
 
         STONE_BLOCK = registerBlock("stone_block", Block::new, Block.Settings.create().strength(3.0F).requiresTool().sounds(BlockSoundGroup.STONE));
         ROAD = registerBlock("road", Road::new, Block.Settings.create().strength(1.0F).sounds(BlockSoundGroup.GRASS));
+
+        DIRT_BLOCK = registerBlock("dirt_block", DirtBlock::new, Block.Settings.create().strength(1.0F).sounds(BlockSoundGroup.GRASS));
 
         STONE_STAIRS = registerBlock("stone_stairs", (settings) -> new StairsBlock(ModBlocks.STONE_BLOCK.getDefaultState(), settings), Block.Settings.create().strength(3.0F).requiresTool().sounds(BlockSoundGroup.STONE));
         STONE_SLAB = registerBlock("stone_slab", SlabBlock::new, AbstractBlock.Settings.create().strength(2f).requiresTool());

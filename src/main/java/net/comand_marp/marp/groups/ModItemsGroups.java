@@ -69,6 +69,8 @@ public class ModItemsGroups {
                         entries.add(ModBlocks.STONE_WALL);
                         entries.add(ModBlocks.STONE_DOOR);
                         entries.add(ModBlocks.STONE_TRAPDOOR);
+
+                        entries.add(ModBlocks.DIRT_BLOCK);
                     }).build());
 
     public static void registerItemGroups() {
