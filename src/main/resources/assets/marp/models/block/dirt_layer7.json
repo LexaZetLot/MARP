@@ -1,7 +1,7 @@
 {
   "parent": "block/block",
   "textures": {
-    "all": "marp:block/dirt"
+    "all": "marp:block/dirt_block"
   },
   "elements": [
     {

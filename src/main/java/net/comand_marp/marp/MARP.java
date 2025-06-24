@@ -2,6 +2,7 @@ package net.comand_marp.marp;
 
 import net.comand_marp.marp.block.ModBlocks;
 import net.comand_marp.marp.component.ModDataComponentTypes;
+import net.comand_marp.marp.events.BlockEventHandler;
 import net.comand_marp.marp.fuel.ModFuelItems;
 import net.comand_marp.marp.groups.ModItemsGroups;
 import net.comand_marp.marp.item.ModItems;
@@ -31,5 +32,8 @@ public class MARP implements ModInitializer {
 		ModFuelItems.registerFuels();
 		ModDataComponentTypes.registerDataComponentTypes();
 		PlayerBlockBreakEvents.BEFORE.register(new HammerUsageEvent());
+
+		//events
+		BlockEventHandler.register();
 	}
 }

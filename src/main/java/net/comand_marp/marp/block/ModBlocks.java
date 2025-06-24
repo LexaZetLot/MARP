@@ -1,7 +1,7 @@
 package net.comand_marp.marp.block;
 
 import net.comand_marp.marp.MARP;
-import net.comand_marp.marp.block.custom.DirtBlock;
+import net.comand_marp.marp.block.custom.block_layers.DirtBlock;
 import net.comand_marp.marp.block.custom.Road;
 import net.minecraft.block.*;
 import net.minecraft.item.Items;
@@ -64,8 +64,11 @@ public class ModBlocks {
         final Identifier identifier = Identifier.of(MARP.MOD_ID, name);
         final RegistryKey<Block> registryKey = RegistryKey.of(RegistryKeys.BLOCK, identifier);
 
+        MARP.LOGGER.info("Starting registered block: {}", name);
         final Block block = Blocks.register(registryKey, factory, settings);
+        MARP.LOGGER.info("Before Items.register: {}", name);
         Items.register(block);
+        MARP.LOGGER.info("After Items.register: {}", name);
         MARP.LOGGER.info("Successfully registered block: {}", identifier);
         return block;
     }
